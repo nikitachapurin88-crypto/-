@@ -66,3 +66,15 @@ python3 app.py
 ```
 
 Открой в браузере: `http://localhost:5000`
+
+Если запуск не удался
+ModuleNotFoundError: No module named 'flask'
+Виртуальное окружение не активировано. Запусти source venv/bin/activate и повтори.
+python3: command not found
+Установи Python: sudo apt install python3
+Address already in use
+Порт 5000 занят другим процессом. Останови его или поменяй порт в app.py: app.run(port=5001)
+Страница не открывается в браузере
+Попробуй http://0.0.0.0:5000 или поменяй в app.py последнюю строку на app.run(host='0.0.0.0', port=5000) и перезапусти.
+No such file or directory: requirements.txt
+Ты не в папке проекта. Запусти cd ~/sorting_visualizer сначала.
